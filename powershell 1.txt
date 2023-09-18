@@ -1,0 +1,13 @@
+Команды для Windows Powershell
+1. Скачиваем образ Postgres
+docker pull postgres
+2. Пишем инструкции для docker-file
+3. Собираем контейнер
+docker build -t my-postgres .
+4. Запускаем
+docker run --name my-postgres-container -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword -d my-postgres
+5.Проверяем
+docker ps
+6. В docker-файл добавляем команду
+VOLUME data:/var/lib/postgressql/data
+

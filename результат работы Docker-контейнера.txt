@@ -1,0 +1,8 @@
+PS C:\Users\Denis\Documents\1T\SQL\1T_DE_2.2_pro> docker remove my-postgres-container
+my-postgres-container
+PS C:\Users\Denis\Documents\1T\SQL\1T_DE_2.2_pro> docker run --name my-postgres-container -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword -d my-postgres
+9102601c14e82695c97dc30861bc19f9e17495e0454cff9176df63f25001ec70
+PS C:\Users\Denis\Documents\1T\SQL\1T_DE_2.2_pro> docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED      STATUS          PORTS      NAMES
+2aacf730606d   87fa4ada3896   "docker-entrypoint.s…"   8 days ago   Up 30 minutes   5432/tcp   pedantic_williamson
+PS C:\Users\Denis\Documents\1T\SQL\1T_DE_2.2_pro>
