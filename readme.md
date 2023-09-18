@@ -41,6 +41,7 @@ COPY biblioteka.sql /docker-entrypoint-initdb.d/biblioteka.sql
 VOLUME data:/var/lib/postgressql/data
 
 Результат работы Docker-контейнера
+
 PS C:\Users\Denis\Documents\1T\SQL\1T_DE_2.2_pro> docker remove my-postgres-container
 my-postgres-container
 PS C:\Users\Denis\Documents\1T\SQL\1T_DE_2.2_pro> docker run --name my-postgres-container -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword -d my-postgres
